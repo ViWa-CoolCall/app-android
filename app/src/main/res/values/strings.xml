@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Cool Call</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="description">Cool Call App</string>
+    <string name="viwa_cool_call">ViWa - Cool Call</string>
+    <string name="home_text_1">Um Concentrador de Portais da transparência de Código Aberto.</string>
+    <string name="home_text_2">A estrutura da plataforma te permite adicionar rapidamente informações sobre o portal de transparência de seu município.</string>
+    <string name="btn_home">Explorar os portais</string>
+</resources>
