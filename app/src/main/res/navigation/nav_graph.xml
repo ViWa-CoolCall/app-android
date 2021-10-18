@@ -24,9 +24,7 @@
         tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_portaisFragment"
-            app:destination="@+id/portaisFragment"
-            app:popUpTo="@id/nav_graph"
-            app:popUpToInclusive="true" />
+            app:destination="@+id/portaisFragment" />
     </fragment>
 
     <fragment
@@ -36,8 +34,11 @@
         tools:layout="@layout/fragment_portais">
         <action
             android:id="@+id/action_portaisFragment_to_optionsFragment"
-            app:destination="@+id/optionsFragment"
-            app:popUpTo="@id/nav_graph"
+            app:destination="@+id/optionsFragment" />
+        <action
+            android:id="@+id/action_portaisFragment_to_homeFragment"
+            app:destination="@+id/homeFragment"
+            app:popUpTo="@id/homeFragment"
             app:popUpToInclusive="true" />
     </fragment>
 
@@ -48,7 +49,10 @@
         tools:layout="@layout/fragment_options">
         <action
             android:id="@+id/action_optionsFragment_to_downloadFragment"
-            app:destination="@+id/downloadFragment"
+            app:destination="@+id/downloadFragment" />
+        <action
+            android:id="@+id/action_optionsFragment_to_portaisFragment"
+            app:destination="@+id/portaisFragment"
             app:popUpTo="@id/portaisFragment"
             app:popUpToInclusive="true" />
     </fragment>
