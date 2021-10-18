@@ -34,6 +34,30 @@
         android:name="br.com.coolcall.PortaisFragment"
         android:label="fragment_portais"
         tools:layout="@layout/fragment_portais">
+        <action
+            android:id="@+id/action_portaisFragment_to_optionsFragment"
+            app:destination="@+id/optionsFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/optionsFragment"
+        android:name="br.com.coolcall.OptionsFragment"
+        android:label="fragment_options"
+        tools:layout="@layout/fragment_options">
+        <action
+            android:id="@+id/action_optionsFragment_to_downloadFragment"
+            app:destination="@+id/downloadFragment"
+            app:popUpTo="@id/nav_graph"
+            app:popUpToInclusive="true" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/downloadFragment"
+        android:name="br.com.coolcall.DownloadFragment"
+        android:label="fragment_download"
+        tools:layout="@layout/fragment_download">
 
     </fragment>
 

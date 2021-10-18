@@ -7,4 +7,18 @@
     <string name="home_text_1">Um Concentrador de Portais da transparência de Código Aberto.</string>
     <string name="home_text_2">A estrutura da plataforma te permite adicionar rapidamente informações sobre o portal de transparência de seu município.</string>
     <string name="btn_home">Explorar os portais</string>
+    <string name="portais_title">Portais da Transparência</string>
+    <string name="portais_guarulhos_title">Portal de Guarulhos</string>
+    <string name="guarulhos_image_description">Guarulhos</string>
+    <string name="portais_receitas_btn">Ver receitas</string>
+    <string name="options_title">Receitas - Guarulhos</string>
+    <string name="btn_pesquisar">Pesquisar</string>
+    <string name="download_receitas_title_1">Portal da Transparência de Guarulhos</string>
+    <string name="download_receitas_title_2">Download das Receitas</string>
+    <string name="btn_download_pdf">Download PDF</string>
+    <string name="btn_download_txt">Download TXT</string>
+    <string name="btn_download_csv">Download CSV</string>
+    <string name="btn_download_odt">Download ODT</string>
+    <string name="btn_download_odf">Download ODF</string>
+    <string name="btn_download_ods">Download ODS</string>
 </resources>
