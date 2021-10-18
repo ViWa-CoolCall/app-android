@@ -26,6 +26,12 @@ class OptionsFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        activity?.let {
+            arrayAdapter(it, binding.spinnerMesInicial, R.array.options_meses)
+            arrayAdapter(it, binding.spinnerMesFinal, R.array.options_meses)
+            arrayAdapter(it, binding.spinnerQuebra, R.array.options_quebras)
+            arrayAdapter(it, binding.spinnerReceita, R.array.options_receitas)
+        }
 
         binding.btnPesquisar.setOnClickListener {
             val action = OptionsFragmentDirections.actionOptionsFragmentToDownloadFragment()
@@ -33,13 +39,11 @@ class OptionsFragment : Fragment() {
         }
     }
 
-    private fun arrayAdapter(context: Context) {
-
-        val spinner: Spinner = binding.spinnerMesInicial
+    private fun arrayAdapter(context: Context, spinner: Spinner, options: Int) {
         ArrayAdapter.createFromResource(
             context,
-            R.array.options_meses,
-            android.R.layout.simple_spinner_item
+            options,
+            android.R.layout.simple_spinner_dropdown_item
         ).also { adapter ->
             adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
             spinner.adapter = adapter

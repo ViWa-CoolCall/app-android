@@ -49,7 +49,7 @@
         <action
             android:id="@+id/action_optionsFragment_to_downloadFragment"
             app:destination="@+id/downloadFragment"
-            app:popUpTo="@id/nav_graph"
+            app:popUpTo="@id/portaisFragment"
             app:popUpToInclusive="true" />
     </fragment>
 

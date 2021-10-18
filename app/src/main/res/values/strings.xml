@@ -21,4 +21,8 @@
     <string name="btn_download_odt">Download ODT</string>
     <string name="btn_download_odf">Download ODF</string>
     <string name="btn_download_ods">Download ODS</string>
+    <string name="txtView_mes_inicial">Mês inicial</string>
+    <string name="txtView_mes_final">Mês Final</string>
+    <string name="txtView_quebra">Quebra</string>
+    <string name="txtView_receita">Receita</string>
 </resources>

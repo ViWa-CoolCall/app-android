@@ -8,50 +8,136 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/top_divider"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            app:layout_constraintGuide_percent="0.25" />
-
         <TextView
-            android:id="@+id/portais_title"
-            android:layout_width="match_parent"
+            android:id="@+id/options_title"
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="46dp"
+            android:layout_marginBottom="31dp"
             android:gravity="center_horizontal"
             android:text="@string/options_title"
             android:textAlignment="center"
-            android:textColor="#f55e61"
+            android:textColor="@color/primary"
             android:textSize="34sp"
             android:textStyle="bold"
-            app:layout_constraintBottom_toTopOf="@+id/top_divider"
+            app:layout_constraintBottom_toTopOf="@+id/textView_mes_inicial"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintVertical_bias="0.338" />
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView_mes_inicial"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="13dp"
+            android:text="@string/txtView_mes_inicial"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/spinner_mes_inicial"
+            app:layout_constraintStart_toStartOf="@+id/spinner_mes_inicial"
+            app:layout_constraintTop_toBottomOf="@+id/options_title" />
 
         <Spinner
             android:id="@+id/spinner_mes_inicial"
-            android:layout_width="312dp"
-            android:layout_height="31dp"
+            style="@android:style/Widget.Material.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="31dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView_mes_final"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_mes_inicial" />
+
+        <TextView
+            android:id="@+id/textView_mes_final"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="9dp"
+            android:text="@string/txtView_mes_final"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/spinner_mes_final"
+            app:layout_constraintStart_toStartOf="@+id/spinner_mes_final"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_mes_inicial" />
+
+        <Spinner
+            android:id="@+id/spinner_mes_final"
+            style="@android:style/Widget.Material.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="47dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="29dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView_quebra"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_mes_final" />
+
+        <TextView
+            android:id="@+id/textView_quebra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="15dp"
+            android:text="@string/txtView_quebra"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/spinner_quebra"
+            app:layout_constraintStart_toStartOf="@+id/spinner_mes_final"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_mes_final" />
+
+        <Spinner
+            android:id="@+id/spinner_quebra"
+            style="@android:style/Widget.Material.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="29dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView_receita"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/portais_title" />
+            app:layout_constraintTop_toBottomOf="@+id/textView_quebra" />
+
+        <TextView
+            android:id="@+id/textView_receita"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="47dp"
+            android:layout_marginBottom="11dp"
+            android:text="@string/txtView_receita"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/spinner_receita"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_quebra" />
+
+        <Spinner
+            android:id="@+id/spinner_receita"
+            style="@android:style/Widget.Material.Spinner.Underlined"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="49dp"
+            android:layout_marginEnd="49dp"
+            android:layout_marginBottom="59dp"
+            app:layout_constraintBottom_toTopOf="@+id/btn_pesquisar"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView_receita" />
 
         <Button
             android:id="@+id/btn_pesquisar"
-            android:layout_width="296dp"
+            android:layout_width="0dp"
             android:layout_height="70dp"
-            android:backgroundTint="#f55e61"
+            android:layout_marginStart="47dp"
+            android:layout_marginEnd="47dp"
+            android:layout_marginBottom="43dp"
+            android:backgroundTint="@color/primary"
             android:text="@string/btn_pesquisar"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.494"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/spinner_mes_inicial"
-            app:layout_constraintVertical_bias="0.175" />
+            app:layout_constraintTop_toBottomOf="@+id/spinner_receita" />
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
